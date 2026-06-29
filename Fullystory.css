@@ -1,0 +1,178 @@
+/* === PROJECTS PAGE SPECIFIC === */
+body{ font-family: 'Poppins', sans-serif; background: linear-gradient( -45deg, #0f172a, #1e293b, #334155, #0f172a ); background-size: 400% 400%; animation: gradientFlow 15s ease infinite; } @keyframes gradientFlow{ 0%{ background-position: 0% 50%; } 50%{ background-position: 100% 50%; } 100%{ background-position: 0% 50%; } }
+
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 30px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Each project card */
+article {
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+article:hover {
+  background: #f0f0f0;
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  color: #444;
+}
+
+article p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Header + Nav - same as other pages */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+}
+
+header div span {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+
+#copyright {
+		color: #ffffff;
+		position: relative;
+		color: rgba(255, 255, 255, 0.25);
+		cursor: default;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 0.8rem;
+		font-weight: 900;
+		letter-spacing: 0.075em;
+		line-height: 1.5;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 4rem auto 8rem auto;
+		width: calc(100% - 4rem);
+		max-width: 72rem;
+		z-index: 2;
+	}
+
+		#copyright input, #copyright select, #copyright textarea {
+			color: #ffffff;
+		}
+
+		#copyright a {
+			color: #ffffff;
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+			#copyright a:hover {
+				border-bottom-color: transparent;
+				color: #18bfef !important;
+			}
+
+		#copyright strong, #copyright b {
+			color: #ffffff;
+		}
+
+		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
+			color: #ffffff;
+		}
+
+		#copyright blockquote {
+			border-left-color: #ffffff;
+		}
+
+		#copyright code {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: #ffffff;
+		}
+
+		#copyright hr {
+			border-bottom-color: #ffffff;
+		}
+
+		#copyright a {
+			color: inherit;
+			border-bottom-color: inherit;
+		}
+
+		#copyright ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+
+			#copyright ul li {
+				border-left: solid 2px;
+				display: inline-block;
+				line-height: 1;
+				margin-left: 1rem;
+				padding-left: 1rem;
+			}
+
+				#copyright ul li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+		@media screen and (max-width: 1280px) {
+
+			#copyright {
+				margin: 4rem auto;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#copyright ul li {
+				border-left: 0;
+				margin: 1rem 0 0 0;
+				padding-left: 0;
+				display: block;
+			}
+
+				#copyright ul li:first-child {
+					margin-top: 0;
+				}
+
+		}
