@@ -9,7 +9,12 @@ html{
 }
 
 #intro {
-    display: flex;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    min-height: 100vh !important;
+    padding: 100px 20px 60px !important;
     margin: auto;
 }
 
@@ -33,7 +38,10 @@ html{
 }
 
 @media (max-width: 480px) {
-  .My-picture {
+  #intro {
+    padding: 80px 15px 50px !important;
+  }
+    .My-picture {
     padding: 80px 15px 50px;
     border-radius: 100%;
   }
@@ -131,12 +139,35 @@ html{
 }
 
 .actions.special{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
     flex-wrap: wrap;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 20px auto 0 !important;
+    width: 100% !important;
+    max-width: 320px !important;
 }
 
+.actions.special li {
+    list-style: none !important;
+    width: 70% !important;
+}
+
+@media (min-width: 481px) {
+  .actions.special {
+    flex-direction: row !important;
+    max-width: 100% !important;
+  }
+  
+  .actions.special li {
+    width: auto !important;
+  }
+  
+}
 
 .Screen-Img {
     width: 100%;
