@@ -21,20 +21,8 @@ html{
 }
 
 .Front-Img {
-  /* width: 220px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 3px solid rgba(56,189,248,0.4);
-  box-shadow: 
-    0 20px 40px rgba(56,189,248,.3),
-    0 0 0 8px rgba(15,23,42,0.8);
-  transition: all 0.4s ease;
-  position: relative;
-  z-index: 2; */
-
-  width: 25%;
-  height: 50%;
+  width: clamp(160px, 35vw, 280px);
+  height: clamp(160px, 35vw, 280px);
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid white;
@@ -50,9 +38,10 @@ html{
     border-radius: 100%;
   }
   
-  .image-wrapper {
-    width: 200px;
-    height: 200px;
+  .Front-Img {
+    width: 180px;
+    height: 180px;
+    border-width: 5px;
   }
 }
 
@@ -94,8 +83,8 @@ html{
 
 @media (max-width: 768px) {
   .Front-Img {
-    width: 180px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
   }
   .My-picture::before {
     width: 200px;
@@ -302,6 +291,3 @@ body{ font-family: 'Poppins', sans-serif; background: linear-gradient( -45deg, #
 .button:hover::before{
     left:100%;
 }
-
-
-
