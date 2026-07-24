@@ -462,3 +462,9 @@ body{ font-family: 'Poppins', sans-serif; background: linear-gradient( -45deg, #
     font-size: 2.2rem;
   }
 }
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
